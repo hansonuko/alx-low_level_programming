@@ -1,6 +1,14 @@
-#include "main"
+#include "main.h"
 
-/** main - Function that prints all alphabets in lowercase
- * by Uko
- * Return: 0 
+/**
+ * print_alphabet - in lowercase
  */
+
+void print_alphabet(void);
+{
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+	_putchar(letter);
+	_putchar('\n');
+}
