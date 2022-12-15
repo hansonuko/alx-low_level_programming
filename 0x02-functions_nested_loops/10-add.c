@@ -2,12 +2,12 @@
 
 /**
  * add - adds to integers
- * @int: represents two numbers to be added
- *
+ * @num1: represents int numbers to be added
+ * @num2: second int to be added
  * Return: the result of the addition
  */
 
-int add(int, int)
+int add(num1, num2)
 {
 	return (num1 + num2);
 }
