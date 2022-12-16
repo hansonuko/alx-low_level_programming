@@ -9,12 +9,8 @@
 
 int _isdigit(int c)
 {
-	char c;
-
-	c = '0';
-	_putchar("%c: %d\n", c, _isdigit(c));
-	c = 'a';
-	_putchar("%c: %d\n", c, _isdigit(c));
-
-	return (0);
+	if (c >= 0 && c <= 9)
+		return (1);
+	else
+		return (0);
 }
