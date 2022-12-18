@@ -1,19 +1,24 @@
 #include "main.h"
 
 /**
- * print_last_digit - print last digit of a number
- *@n: to be looked out for
- * Return: value of the digit
+ * print_last_digit - prints last digit
+ * @x: the integer to look out for
+ *
+ * Return: las digit
  */
 
-int print_last_digit(int n)
+int print_last_digit(int x)
 {
-	int last_digit = n % 10;
+	int y;
 
-	if (last_digit < 0)
-		last_digit *= -1;
-
-	_putchar((last_digit) n + '0');
-
-	return (last_digit);
+	if (x < 0)
+	{
+		y = -1 * (x % 10);
+		_putchar(y + '0');
+		return (y);
+	}
+	else
+		y = x % 10;
+	_putchar(y + 10);
+	return (y);
 }
